@@ -1,8 +1,8 @@
 // Write your Character component here
 import React from 'react';
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
+    Card, CardText, CardBody,
+    CardTitle, Button
   } from 'reactstrap';
 
 const Character = (props) => {
@@ -10,12 +10,11 @@ const Character = (props) => {
 
     return (
         <Card>
-        <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+        {/* <CardImg top width="100%" src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1588363453210-U6FWTG404OT5NZT13BW0/ke17ZwdGBToddI8pDm48kAu1Kueb7vuAs3qufYnUUfF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmnhdptcuU1alwky_sWs380uGhOpA26fPpitnvRnWPhc0RBdpzh9ajq8mK84TG1Nji/new-star-wars-poster-for-the-skywalker-saga-and-disney-shares-concept-art-for-its-may-the-4th-takeover2?format=1500w" alt="Card image cap" /> */}
         <CardBody>
-          <CardTitle>{props.name}</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content. <a href={props.homeworld}>Homeworld API URL </a> </CardText>
-          <Button>Button</Button>
+          <CardTitle>{props.name}</CardTitle>          
+          <CardText>Mass: {props.mass} </CardText>
+          <Button color="danger" href={props.homeworld}>Homeworld API URL</Button>
         </CardBody>
       </Card>
       
