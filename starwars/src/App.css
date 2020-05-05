@@ -1,8 +1,29 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  width: 100%;
 }
 /* write your parent styles in here for your App.js */
+.App {
+  display: flex;
+}
+
+.CharList { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  
+}
+
+.Character {
+  display: flex;
+  width: fit-content;
+  padding: 1%;
+}
